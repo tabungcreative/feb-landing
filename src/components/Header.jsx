@@ -2,7 +2,7 @@ import React from "react";
 import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import logo from "../assets/images/logo_feb.png";
 
-const Menubar = () => {
+const Header = () => {
 	return (
 		<Navbar bg="light" variant="light" expand="lg">
 			<Container>
@@ -38,4 +38,4 @@ const Menubar = () => {
 	);
 };
 
-export default Menubar;
+export default Header;
