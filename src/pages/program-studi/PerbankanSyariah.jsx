@@ -10,7 +10,7 @@ const PerbankanSyariah = () => {
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-12 col-md-8 col-sm-4">
-						<h2 class="h2 mt-5">Manajemen</h2>
+						<h2 class="h2 mt-5">Perbankan Syariah</h2>
 						<LineDivider />
 						<h5 class="h5 mt-2">Sejarah</h5>
 						<p>

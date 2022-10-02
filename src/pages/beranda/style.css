@@ -1,0 +1,15 @@
+a {
+	text-decoration: none;
+}
+.btn.btn-base {
+	background-color: #930909;
+	color: #ffffff;
+}
+a.btn.btn-base:hover {
+	background-color: #810909;
+	color: #ffffff;
+}
+.left-line {
+	border-left: 2px solid #930909;
+	padding-left: 10px;
+}

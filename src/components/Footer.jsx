@@ -4,7 +4,7 @@ import logo from "../assets/images/logo_feb_putih.png";
 
 const Footer = () => {
 	return (
-		<MDBFooter bgColor="black" className="text-white text-left text-lg-left">
+		<MDBFooter bgColor="black" className="text-white text-left text-lg-left mt-5">
 			<MDBContainer className="p-4">
 				<MDBRow>
 					<MDBCol lg="4" md="6" className="mb-4 mb-md-0 ">

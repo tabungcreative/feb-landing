@@ -13,9 +13,8 @@ a.text-gray:hover {
 }
 
 .text-dark-red:hover {
-	color: #b11212;
+	color: #810909;
 }
-
 .list-studi {
 	padding-left: 18px;
 }
@@ -29,4 +28,26 @@ a.text-gray:hover {
 	height: 3px;
 	background-color: #b6b7b7;
 	margin-left: 1rem;
+}
+
+.btn.btn-base {
+	background-color: #930909;
+	color: #ffffff;
+}
+a.btn.btn-base:hover {
+	background-color: #810909;
+	color: #ffffff;
+}
+.banner {
+	width: 100%;
+	background-size: cover;
+}
+.vl {
+	border-left: 2px solid #930909;
+	height: 250px;
+}
+@media screen and (max-width: 1000px) {
+	.vl {
+		display: none;
+	}
 }
