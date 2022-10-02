@@ -15,3 +15,18 @@ a.text-gray:hover {
 .text-dark-red:hover {
 	color: #b11212;
 }
+
+.list-studi {
+	padding-left: 18px;
+}
+.separator {
+	display: flex;
+	align-items: center;
+}
+
+.separator .line {
+	flex: 1;
+	height: 3px;
+	background-color: #b6b7b7;
+	margin-left: 1rem;
+}

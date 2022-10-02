@@ -9,6 +9,15 @@ const Footer = () => {
 				<MDBRow>
 					<MDBCol lg="4" md="6" className="mb-4 mb-md-0 ">
 						<img src={logo} width="150" className="mb-2" alt="" />
+						<hr
+							style={{
+								background: "#b6b7b7",
+								color: "#b6b7b7",
+								borderColor: "#b6b7b7",
+								height: "2px",
+								width: "15rem",
+							}}
+						/>
 						<h6 className="text-uppercase text-gray">Fakultas Ekonomi dan Bisnis</h6>
 						<p className="text-gray">
 							Universitas Sains Al Qur’an <br /> Jawa Tengah di Wonosobo
@@ -16,9 +25,9 @@ const Footer = () => {
 					</MDBCol>
 
 					<MDBCol lg="4" md="6" className="mb-4 mb-md-0">
-						<h5 className="text-uppercase mb-0">Tentang Fakultas</h5>
+						<h5 className="text-uppercase">Tentang Fakultas</h5>
 
-						<ul className="list-unstyled">
+						<ul className="list-unstyled mb-0 text-gray">
 							<li>
 								<a href="#!" className="text-gray text-line-none">
 									Sejarah Feb Unsiq
