@@ -1,6 +1,10 @@
 a {
 	text-decoration: none;
 }
+
+a.pengumuman {
+	text-decoration: none;
+}
 .btn.btn-base {
 	background-color: #930909;
 	color: #ffffff;

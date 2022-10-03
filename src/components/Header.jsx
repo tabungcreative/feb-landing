@@ -70,10 +70,14 @@ const Header = () => {
 								<Link id="link">File Unduhan</Link>
 							</NavDropdown.Item>
 							<NavDropdown.Item>
-								<a href=""> Pendaftaran Akademik</a>
+								<a href="/" id="link" target="_blank" rel="noopener noreferrer">
+									Pendaftaran Akademik
+								</a>
 							</NavDropdown.Item>
 							<NavDropdown.Item>
-								<a href="">Perpustakaan</a>
+								<a href="/" id="link" target="_blank" rel="noopener noreferrer">
+									Perpustakaan
+								</a>
 							</NavDropdown.Item>
 						</NavDropdown>
 					</Nav>

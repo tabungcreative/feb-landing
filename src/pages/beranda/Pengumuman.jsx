@@ -28,8 +28,8 @@ export default Pengumuman;
 const CardPengumuman = props => {
 	return (
 		<div className="col-md-4 mt-3">
-			<a href="/">
-				<div className="card border-1 bg-light">
+			<a href="/" className="pengumuman">
+				<div className="card border-1 bg-white">
 					<div className="card-body">
 						<div className="left-line">
 							<h5 className="card-title text-black mb-3">{props.judul}</h5>

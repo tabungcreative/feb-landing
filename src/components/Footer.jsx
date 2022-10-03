@@ -1,6 +1,7 @@
 import React from "react";
 import {MDBFooter, MDBContainer, MDBCol, MDBRow} from "mdb-react-ui-kit";
 import logo from "../assets/images/logo_feb_putih.png";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -29,8 +30,18 @@ const Footer = () => {
 
 						<ul className="list-unstyled mb-0 text-gray">
 							<li>
-								<a href="#!" className="text-gray text-line-none">
-									Sejarah Feb Unsiq
+								<li>
+									<Link to="/sejarah-feb" className="text-gray text-line-none">
+										Sejarah Feb Unsiq
+									</Link>
+								</li>
+								<a href="https://akademik.unsiq.ac.id/login.php" className="text-gray text-line-none" target="_blank" rel="noopener noreferrer">
+									Akademik Unsiq
+								</a>
+							</li>
+							<li>
+								<a href="https://pmb.unsiq.ac.id/" className="text-gray text-line-none" target="_blank" rel="noopener noreferrer">
+									PMB Unsiq
 								</a>
 							</li>
 						</ul>
