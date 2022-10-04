@@ -10,9 +10,9 @@ const Akuntansi = () => {
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-12 col-md-8 col-sm-4">
-						<h2 class="h2 mt-5">Akuntansi</h2>
+						<h2 className="h2 mt-5">Akuntansi</h2>
 						<LineDivider />
-						<h5 class="h5 mt-2">Sejarah</h5>
+						<h5 className="h5 mt-2">Sejarah</h5>
 						<p>
 							Keberadaan Program Studi Akuntansi sebagai jawaban dari tuntutan yang ada dan sekaligus menjadi tantangan bagi Fakultas Ekonomi dan Bisnis UNSIQ Program Studi Akuntansi untuk menghasilkan para lulusan yang mempunyai kompetensi
 							teknis, ketrampilan professional serta dibekali nilai-nilai etika, religius, bertanggung jawab penuh terhadap pekerjaan yang diselesaikannya, memiliki wawasan ilmu pengetahuan dan siap bekerja dalam lingkungan manapun serta

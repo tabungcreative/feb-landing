@@ -5,16 +5,17 @@ import Footer from "../../components/Footer";
 import Berita from "./Berita";
 import Pengumuman from "./Pengumuman";
 import Program from "./Program";
-import gambar from "../../assets/images/img.JPG";
+import gambar from "../../assets/images/logo_feb.png";
 import "./style.css";
+import {Link} from "react-router-dom";
+
 const Beranda = () => {
 	return (
-		<>
+		<div className="bg-light">
 			<Header />
 			<Hero />
-
-			<div className="container mt-5">
-				<div className="row">
+			<div className="container mt-3 p-3">
+				<div className="row d-flex align-items-center mt-3">
 					<div className="col-lg-5 mb-4">
 						<img src={gambar} className="img-fluid" alt={gambar} />
 					</div>
@@ -24,9 +25,9 @@ const Beranda = () => {
 					<div className="col-lg-5">
 						<h3>Visi</h3>
 						<p>Menjadi Fakultas Ekonomi dan Bisnis yang menjunjung nilai-nilai Islam dan unggul dibidang Kewirausahaan pada Tahun 2031.</p>
-						<a href="/" className="red">
+						<Link to="/visi-misi-feb" id="red">
 							Selengkapnya
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>
@@ -34,7 +35,7 @@ const Beranda = () => {
 			<Berita />
 			<Program />
 			<Footer />
-		</>
+		</div>
 	);
 };
 

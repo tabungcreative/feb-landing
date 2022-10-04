@@ -10,9 +10,9 @@ const PerbankanSyariah = () => {
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-12 col-md-8 col-sm-4">
-						<h2 class="h2 mt-5">Perbankan Syariah</h2>
+						<h2 className="h2 mt-5">Perbankan Syariah</h2>
 						<LineDivider />
-						<h5 class="h5 mt-2">Sejarah</h5>
+						<h5 className="h5 mt-2">Sejarah</h5>
 						<p>
 							Keinginan sebagian masyarakat muslim untuk menjalankan syariat Islam dalam segala aspek kehidupan semakin kencang, termasuk dalam hal bermuamalah, yang ditandai dengan semakin pesatnya perkembangan bank-bank syariah yang
 							menerapkan prinsip-prinsip syariat Islam, sehingga diperlukan tenaga Perbankan Syariah maupun Lembaga Keuangan Syariah yang profesional. Melihat realitas masyarakat dan peluang yang ada, Fakultas Syariah dan Hukum UNSIQ Jawa

@@ -4,11 +4,13 @@ import img from "../../assets/images/img.JPG";
 
 const Program = () => {
 	return (
-		<div className="container">
-			<div className="row">
-				<HeadingLine name="Program Kami"></HeadingLine>
-				<CardProgram gambar={img} button="Kelas Eksekutif" />
-				<CardProgram gambar={img} button="Kelas Regular" />
+		<div className="container-fluid bg-white p-3 mt-5">
+			<div className="container">
+				<div className="row">
+					<HeadingLine name="Program Kami"></HeadingLine>
+					<CardProgram gambar={img} button="Kelas Eksekutif" />
+					<CardProgram gambar={img} button="Kelas Regular" />
+				</div>
 			</div>
 		</div>
 	);

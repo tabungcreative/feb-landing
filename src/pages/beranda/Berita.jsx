@@ -1,29 +1,28 @@
 import axios from "axios";
 import React, {useState, useEffect} from "react";
-import img from "../../assets/images/img.JPG";
 import HeadingLine from "../../components/HeadingLine";
+import {Link} from "react-router-dom";
 
 const Berita = () => {
-	// const [data, setData] = useState(null);
-	// const [loading, setLoading] = useState(true);
-	// const [error, setError] = useState(null);
-	// useEffect(() => {
-	// 	const getData = async () => {
-	// 		try {
-	// 			const response = await axios.get(`https://api.chucknorris.io/jokes/random`);
-	// 			setData(response.data.data);
-	// 			console.log(response);
-	// 			setError(null);
-	// 			console.log(data);
-	// 		} catch (err) {
-	// 			setError(err.message);
-	// 			setData(null);
-	// 		} finally {
-	// 			setLoading(false);
-	// 		}
-	// 	};
-	// 	getData();
-	// }, []);
+	const [data, setData] = useState(null);
+	const [loading, setLoading] = useState(true);
+	const [error, setError] = useState(null);
+	useEffect(() => {
+		const getData = async () => {
+			try {
+				const response = await axios.get(`http://ebfis.feb-unsiq.ac.id/api/berita?size=3`);
+				setData(response.data.data);
+				setError(null);
+			} catch (err) {
+				setError(err.message);
+				setData(null);
+			} finally {
+				setLoading(false);
+			}
+		};
+		getData();
+	}, []);
+
 	return (
 		<>
 			<div className="container">
@@ -33,9 +32,9 @@ const Berita = () => {
 					</div>
 				</div>
 				<div className="row">
-					<CardBerita judul="Berita" gambar={img} isi="asemelekete" tanggal="10 oktober 2022" />
-					<CardBerita judul="Berita" gambar={img} isi="asemelekete" tanggal="10 oktober 2022" />
-					<CardBerita judul="Berita" gambar={img} isi="asemelekete" tanggal="10 oktober 2022" />
+					{loading && <div>Tunggu Sebentar...</div>}
+					{error && <div>{`data gagal dimuat - ${error}`}</div>}
+					{data && data.map(brt => <CardBerita judul={brt.judul} gambar={brt.gambar_url} isi={brt.isi} tanggal={brt.created_at} id={brt.id} key={brt.id} />)}
 				</div>
 			</div>
 		</>
@@ -48,15 +47,15 @@ const CardBerita = props => {
 	return (
 		<div className="col-md-4 mt-3">
 			<div className="card shadow-sm border-0 hover-shadow">
-				<img src={props.gambar} className="card-img-top" alt="..." />
+				<img src={props.gambar} className="card-img-top img-thumbnail img-fluid " alt="..." />
 				<div className="card-body my-0">
-					<h3 className="card-title mb-3 my-0">{props.judul}</h3>
+					<h5 className="card-title mb-3 my-0">{props.judul}</h5>
 					<div className="my-0">
 						<small>{props.tanggal}</small>
 					</div>
-					<a href="/" className="">
+					<Link to={"/berita/" + props.id} className="link">
 						Read More
-					</a>
+					</Link>
 				</div>
 			</div>
 		</div>

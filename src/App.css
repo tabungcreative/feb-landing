@@ -43,11 +43,17 @@ a.btn.btn-base:hover {
 	background-size: cover;
 }
 .vl {
-	border-left: 2px solid #930909;
+	border-left: 4px solid #930909;
 	height: 250px;
 }
 @media screen and (max-width: 1000px) {
 	.vl {
 		display: none;
 	}
+}
+.bg-base {
+	background-color: #930909;
+}
+.akademik-card {
+	text-decoration: none;
 }

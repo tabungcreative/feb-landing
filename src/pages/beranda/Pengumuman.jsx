@@ -3,7 +3,7 @@ import HeadingLine from "../../components/HeadingLine";
 
 const Pengumuman = () => {
 	return (
-		<>
+		<div className="container-fluid bg-white p-3">
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-12 col-md-8 col-sm-6">
@@ -19,7 +19,7 @@ const Pengumuman = () => {
 					<CardPengumuman judul="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd" tanggal="10 oktober 2022" />
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

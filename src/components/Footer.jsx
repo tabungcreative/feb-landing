@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 const Footer = () => {
 	return (
-		<MDBFooter bgColor="black" className="text-white text-left text-lg-left mt-5">
+		<MDBFooter bgColor="black" className="text-white text-left text-lg-left">
 			<MDBContainer className="p-4">
 				<MDBRow>
 					<MDBCol lg="4" md="6" className="mb-4 mb-md-0 ">
@@ -30,15 +30,13 @@ const Footer = () => {
 
 						<ul className="list-unstyled mb-0 text-gray">
 							<li>
-								<li>
-									<Link to="/sejarah-feb" className="text-gray text-line-none">
-										Sejarah Feb Unsiq
-									</Link>
-								</li>
-								<a href="https://akademik.unsiq.ac.id/login.php" className="text-gray text-line-none" target="_blank" rel="noopener noreferrer">
-									Akademik Unsiq
-								</a>
+								<Link to="/sejarah-feb" className="text-gray text-line-none">
+									Sejarah Feb Unsiq
+								</Link>
 							</li>
+							<a href="https://akademik.unsiq.ac.id/login.php" className="text-gray text-line-none" target="_blank" rel="noopener noreferrer">
+								Akademik Unsiq
+							</a>
 							<li>
 								<a href="https://pmb.unsiq.ac.id/" className="text-gray text-line-none" target="_blank" rel="noopener noreferrer">
 									PMB Unsiq

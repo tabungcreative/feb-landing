@@ -1,84 +1,65 @@
 import React from "react";
 import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import logo from "../assets/images/logo_feb.png";
-import {Link} from "react-router-dom";
+import {LinkContainer} from "react-router-bootstrap";
+
 import "./styles.css";
 const Header = () => {
 	return (
 		<Navbar bg="light" variant="light" expand="lg">
 			<Container>
 				<Navbar.Brand>
-					<img src={logo} alt="" width="90" height="60" />
+					<LinkContainer to="/">
+						<img src={logo} alt="" width="90" height="60" />
+					</LinkContainer>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="ms-auto">
-						<Nav.Link>
-							<Link id="link" to="/">
-								Beranda
-							</Link>
-						</Nav.Link>
+						<LinkContainer to="/">
+							<Nav.Link>Beranda</Nav.Link>
+						</LinkContainer>
 						<NavDropdown title="Profil" id="basic-nav-dropdown link">
-							<NavDropdown.Item>
-								<Link id="link" to="/sejarah-feb">
-									Sejarah
-								</Link>
-							</NavDropdown.Item>
-							<NavDropdown.Item>
-								<Link id="link" to="/visi-misi-feb">
-									Visi Misi
-								</Link>
-							</NavDropdown.Item>
-							<NavDropdown.Item>
-								<Link id="link" to="/dosen-feb">
-									Dosen
-								</Link>
-							</NavDropdown.Item>
-							<NavDropdown.Item>
-								<Link id="link" to="/fasilitas-feb">
-									Fasilitas
-								</Link>
-							</NavDropdown.Item>
-							<NavDropdown.Item>
-								<Link id="link" to="/struktur-organisasi-feb">
-									Struktur Organisasi
-								</Link>
-							</NavDropdown.Item>
+							<LinkContainer to="/sejarah-feb">
+								<NavDropdown.Item>Sejarah</NavDropdown.Item>
+							</LinkContainer>
+							<LinkContainer to="/visi-misi-feb">
+								<NavDropdown.Item>Visi Misi</NavDropdown.Item>
+							</LinkContainer>
+							<LinkContainer to="/dosen-feb">
+								<NavDropdown.Item>Dosen</NavDropdown.Item>
+							</LinkContainer>
+							<LinkContainer to="/fasilitas-feb">
+								<NavDropdown.Item>Fasilitas</NavDropdown.Item>
+							</LinkContainer>
+							<LinkContainer to="/struktur-organisasi-feb">
+								<NavDropdown.Item>Struktur Organisasi</NavDropdown.Item>
+							</LinkContainer>
 						</NavDropdown>
 						<NavDropdown title="Program Studi" id="basic-nav-dropdown link">
-							<NavDropdown.Item>
-								<Link id="link" to="/prodi-akuntansi">
-									Akuntasi
-								</Link>
-							</NavDropdown.Item>
-							<NavDropdown.Item>
-								<Link id="link" to="/prodi-manajemen">
-									Manajemen
-								</Link>
-							</NavDropdown.Item>
-							<NavDropdown.Item>
-								<Link id="link" to="/prodi-perbankan-syariah">
-									Perbankan Syari'ah
-								</Link>
-							</NavDropdown.Item>
+							<LinkContainer to="/prodi-akuntansi">
+								<NavDropdown.Item>Akuntasi</NavDropdown.Item>
+							</LinkContainer>
+							<LinkContainer to="/prodi-manajemen">
+								<NavDropdown.Item>Manajemen</NavDropdown.Item>
+							</LinkContainer>
+							<LinkContainer to="/prodi-perbankan-syariah">
+								<NavDropdown.Item>Perbankan Syari'ah</NavDropdown.Item>
+							</LinkContainer>
 						</NavDropdown>
 						<NavDropdown title="Layanan" id="basic-nav-dropdown">
-							<NavDropdown.Item>
-								<Link id="link">Alur Akademik</Link>
-							</NavDropdown.Item>
-							<NavDropdown.Item>
-								<Link id="link">File Unduhan</Link>
-							</NavDropdown.Item>
-							<NavDropdown.Item>
-								<a href="/" id="link" target="_blank" rel="noopener noreferrer">
-									Pendaftaran Akademik
-								</a>
-							</NavDropdown.Item>
-							<NavDropdown.Item>
-								<a href="/" id="link" target="_blank" rel="noopener noreferrer">
-									Perpustakaan
-								</a>
-							</NavDropdown.Item>
+							<LinkContainer to="/alur-akademik-feb">
+								<NavDropdown.Item>Alur Akademik</NavDropdown.Item>
+							</LinkContainer>
+							<LinkContainer to="/file-unduhan">
+								<NavDropdown.Item>File Unduhan</NavDropdown.Item>
+							</LinkContainer>
+							{/* <a href="/" target="_blank" rel="noopener noreferrer"> */}
+							<NavDropdown.Item>Pendaftaran Akademik</NavDropdown.Item>
+							{/* </a> */}
+							{/* <a href="/" target="_blank" rel="noopener noreferrer"> */}
+							<NavDropdown.Item>Perpustakaan</NavDropdown.Item>
+							{/* </a> */}
 						</NavDropdown>
 					</Nav>
 				</Navbar.Collapse>

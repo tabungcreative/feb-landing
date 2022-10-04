@@ -4,7 +4,7 @@ const Banner = props => {
 	return (
 		<>
 			<div>
-				<img src={props.gambar} class="img-fluid banner" alt={props.alt} />
+				<img src={props.gambar} className="img-fluid banner" alt={props.alt} />
 			</div>
 		</>
 	);
