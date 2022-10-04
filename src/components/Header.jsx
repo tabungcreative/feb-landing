@@ -1,6 +1,5 @@
 import React from "react";
 import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
-import logo from "../assets/images/logo_feb.png";
 import {LinkContainer} from "react-router-bootstrap";
 
 import "./styles.css";
@@ -10,7 +9,7 @@ const Header = () => {
 			<Container>
 				<Navbar.Brand>
 					<LinkContainer to="/">
-						<img src={logo} alt="" width="90" height="60" />
+						<img src="https://is3.cloudhost.id/storage-feb/assets/images/logo_feb.png" alt="" width="90" height="60" />
 					</LinkContainer>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />

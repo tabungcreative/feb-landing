@@ -9,8 +9,6 @@ import PerbankanSyariah from "./pages/program-studi/PerbankanSyariah";
 import ErrorPage from "./pages/ErrorPage";
 import "./App.css";
 import BeritaShow from "./pages/beranda/berita/BeritaShow";
-import AlurAkademik from "./pages/layanan/AlurAkademik";
-import FileUnduhan from "./pages/layanan/FileUnduhan";
 
 function App() {
 	return (

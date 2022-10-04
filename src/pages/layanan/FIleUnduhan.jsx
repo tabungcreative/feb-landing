@@ -4,11 +4,10 @@ import Header from "../../components/Header";
 
 const FileUnduhan = () => {
 	return (
-		<div>
+		<>
 			<Header />
-
 			<Footer />
-		</div>
+		</>
 	);
 };
 

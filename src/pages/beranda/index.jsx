@@ -5,7 +5,6 @@ import Footer from "../../components/Footer";
 import Berita from "./Berita";
 import Pengumuman from "./Pengumuman";
 import Program from "./Program";
-import gambar from "../../assets/images/logo_feb.png";
 import "./style.css";
 import {Link} from "react-router-dom";
 
@@ -17,7 +16,7 @@ const Beranda = () => {
 			<div className="container mt-3 p-3">
 				<div className="row d-flex align-items-center mt-3">
 					<div className="col-lg-5 mb-4">
-						<img src={gambar} className="img-fluid" alt={gambar} />
+						<img src="https://is3.cloudhost.id/storage-feb/assets/images/logo_feb.png" className="img-fluid" alt="logo feb" />
 					</div>
 					<div className="col-lg-2 d-flex justify-content-center">
 						<div className="vl"></div>

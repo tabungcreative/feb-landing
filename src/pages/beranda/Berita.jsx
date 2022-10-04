@@ -10,7 +10,11 @@ const Berita = () => {
 	useEffect(() => {
 		const getData = async () => {
 			try {
-				const response = await axios.get(`http://ebfis.feb-unsiq.ac.id/api/berita?size=3`);
+				const response = await axios.get(`http://ebfis.feb-unsiq.ac.id/api/berita?size=3`, {
+					headers: {
+						"Access-Control-Allow-Origin": "*",
+					},
+				});
 				setData(response.data.data);
 				setError(null);
 			} catch (err) {

@@ -11,12 +11,12 @@ const Pengumuman = () => {
 					</div>
 				</div>
 				<div className="row">
-					<CardPengumuman judul="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd" tanggal="10 oktober 2022" />
-					<CardPengumuman judul="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd" tanggal="10 oktober 2022" />
-					<CardPengumuman judul="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd" tanggal="10 oktober 2022" />
-					<CardPengumuman judul="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd" tanggal="10 oktober 2022" />
-					<CardPengumuman judul="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd" tanggal="10 oktober 2022" />
-					<CardPengumuman judul="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd" tanggal="10 oktober 2022" />
+					<CardPengumuman judul="pengumuman semua" tanggal="10 oktober 2022" />
+					<CardPengumuman judul="pengumuman semua" tanggal="10 oktober 2022" />
+					<CardPengumuman judul="pengumuman semua" tanggal="10 oktober 2022" />
+					<CardPengumuman judul="pengumuman semua" tanggal="10 oktober 2022" />
+					<CardPengumuman judul="pengumuman semua" tanggal="10 oktober 2022" />
+					<CardPengumuman judul="pengumuman semua" tanggal="10 oktober 2022" />
 				</div>
 			</div>
 		</div>

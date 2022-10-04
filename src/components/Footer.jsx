@@ -1,6 +1,5 @@
 import React from "react";
 import {MDBFooter, MDBContainer, MDBCol, MDBRow} from "mdb-react-ui-kit";
-import logo from "../assets/images/logo_feb_putih.png";
 import {Link} from "react-router-dom";
 
 const Footer = () => {
@@ -9,7 +8,7 @@ const Footer = () => {
 			<MDBContainer className="p-4">
 				<MDBRow>
 					<MDBCol lg="4" md="6" className="mb-4 mb-md-0 ">
-						<img src={logo} width="150" className="mb-2" alt="" />
+						<img src="https://is3.cloudhost.id/storage-feb/assets/images/logo_feb_putih.png" width="150" className="mb-2" alt="" />
 						<hr
 							style={{
 								background: "#b6b7b7",

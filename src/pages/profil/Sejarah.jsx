@@ -1,6 +1,5 @@
 import React from "react";
 import Banner from "../../components/Banner";
-import banner from "../../assets/images/BANNER2.png";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
@@ -8,7 +7,7 @@ const Sejarah = () => {
 	return (
 		<>
 			<Header />
-			<Banner gambar={banner} alt={banner} />
+			<Banner gambar="https://is3.cloudhost.id/storage-feb/assets/images/BANNER2.png" alt="banner sejarah" />
 			<div className="container mt-5">
 				<div className="row">
 					<div className="col-lg-12 col-md-8 col-sm-6">

@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import {BsFillClockFill} from "react-icons/bs";
+// import {BsFillClockFill} from "react-icons/bs";
 const AlurAkademik = () => {
 	return (
 		<div>

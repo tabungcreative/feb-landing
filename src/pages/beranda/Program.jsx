@@ -1,6 +1,5 @@
 import React from "react";
 import HeadingLine from "../../components/HeadingLine";
-import img from "../../assets/images/img.JPG";
 
 const Program = () => {
 	return (
@@ -8,8 +7,8 @@ const Program = () => {
 			<div className="container">
 				<div className="row">
 					<HeadingLine name="Program Kami"></HeadingLine>
-					<CardProgram gambar={img} button="Kelas Eksekutif" />
-					<CardProgram gambar={img} button="Kelas Regular" />
+					<CardProgram gambar="https://is3.cloudhost.id/storage-feb/assets/images/img.JPG" button="Kelas Eksekutif" />
+					<CardProgram gambar="https://is3.cloudhost.id/storage-feb/assets/images/img.JPG" button="Kelas Regular" />
 				</div>
 			</div>
 		</div>
