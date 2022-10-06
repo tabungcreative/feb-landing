@@ -1,13 +1,14 @@
 import React from "react";
 import Footer from "../../../components/Footer";
 import Header from "../../../components/Header";
-// import HeadingLine from "../../../components/HeadingLine";
 import {useParams} from "react-router-dom";
 import useFetch from "../../../hooks/useFetch";
-const BeritaShow = () => {
+
+const PengumumanShow = () => {
 	const params = useParams();
-	const ShowBerita = process.env.REACT_APP_BERITA;
-	const data = useFetch(`${ShowBerita}/${params.id}`);
+	const pengumuman = process.env.REACT_APP_PENGUMUMAN;
+	const data = useFetch(`${pengumuman}/${params.id}`);
+
 	return (
 		<>
 			<Header />
@@ -18,9 +19,16 @@ const BeritaShow = () => {
 						{/* <HeadingLine name="Berita Terkini" /> */}
 						{data && (
 							<>
-								<h3 className="text-black mt-5">{data.judul}</h3>
-								<img src={data.gambar_url} className="img-fluid img-thumbnail my-3" alt="" style={{width: "100vw", height: "100vh"}} />
-								<UnsafeComponent html={data.isi} />
+								<div>
+									<h3 className="text-black mt-5">{data.judul}</h3>
+									<iframe src={data.file_url} className="img-fluid img-thumbnail my-3" alt="iframe" title="frame pengumuman" style={{width: "100vw", height: "100vh"}} />
+									<div>
+										<a href={data.file_url} target="_blank" rel="noopener noreferrer">
+											download
+										</a>
+									</div>
+									<UnsafeComponent html={data.isi} />
+								</div>
 							</>
 						)}
 					</div>
@@ -31,7 +39,7 @@ const BeritaShow = () => {
 	);
 };
 
-export default BeritaShow;
+export default PengumumanShow;
 
 function UnsafeComponent({html}) {
 	return <div dangerouslySetInnerHTML={{__html: html}} className="mb-5" />;

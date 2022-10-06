@@ -47,7 +47,7 @@ const Header = () => {
 							</LinkContainer>
 						</NavDropdown>
 						<NavDropdown title="Layanan" id="basic-nav-dropdown">
-							<LinkContainer to="/alur-akademik-feb">
+							<LinkContainer to="/alur-akademik">
 								<NavDropdown.Item>Alur Akademik</NavDropdown.Item>
 							</LinkContainer>
 							<LinkContainer to="/file-unduhan">

@@ -57,3 +57,20 @@ a.btn.btn-base:hover {
 .akademik-card {
 	text-decoration: none;
 }
+Link {
+	color: black;
+	text-decoration: none;
+}
+
+.card-left {
+	border-left: 3px solid white;
+	height: 5rem;
+}
+
+.download {
+	text-decoration: none;
+	color: #3a3838;
+}
+.download:hover {
+	color: #930909;
+}

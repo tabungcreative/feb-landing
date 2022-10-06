@@ -2,11 +2,11 @@ import React from "react";
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
 import Footer from "../../components/Footer";
-import Berita from "./Berita";
-import Pengumuman from "./Pengumuman";
-import Program from "./Program";
-import "./style.css";
 import {Link} from "react-router-dom";
+import Berita from "./berita/Berita";
+import Pengumuman from "./pengumuman/Pengumuman";
+import Program from "./program/Program";
+import "./style.css";
 
 const Beranda = () => {
 	return (

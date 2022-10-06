@@ -1,13 +1,14 @@
 import React from "react";
-import Footer from "../../../components/Footer";
-import Header from "../../../components/Header";
-// import HeadingLine from "../../../components/HeadingLine";
-import {useParams} from "react-router-dom";
 import useFetch from "../../../hooks/useFetch";
-const BeritaShow = () => {
+import {useParams} from "react-router-dom";
+import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
+
+const ProgramShow = () => {
 	const params = useParams();
-	const ShowBerita = process.env.REACT_APP_BERITA;
-	const data = useFetch(`${ShowBerita}/${params.id}`);
+	const program = process.env.REACT_APP_PROGRAM;
+	const data = useFetch(`${program}/${params.id}`);
+
 	return (
 		<>
 			<Header />
@@ -18,7 +19,7 @@ const BeritaShow = () => {
 						{/* <HeadingLine name="Berita Terkini" /> */}
 						{data && (
 							<>
-								<h3 className="text-black mt-5">{data.judul}</h3>
+								<h3 className="text-black mt-5">{data.nama_program}</h3>
 								<img src={data.gambar_url} className="img-fluid img-thumbnail my-3" alt="" style={{width: "100vw", height: "100vh"}} />
 								<UnsafeComponent html={data.isi} />
 							</>
@@ -31,7 +32,7 @@ const BeritaShow = () => {
 	);
 };
 
-export default BeritaShow;
+export default ProgramShow;
 
 function UnsafeComponent({html}) {
 	return <div dangerouslySetInnerHTML={{__html: html}} className="mb-5" />;
