@@ -43,7 +43,6 @@ function App() {
 				<Route path="/prodi-akuntansi" element={<Akuntansi />} />
 				<Route path="/prodi-manajemen" element={<Manajemen />} />
 				<Route path="/prodi-perbankan-syariah" element={<PerbankanSyariah />} />
-
 				{/* routing untuk alur akademik */}
 				<Route path="/alur-akademik">
 					<Route path="" index element={<AlurAkademik />}></Route>

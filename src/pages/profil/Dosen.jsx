@@ -5,8 +5,8 @@ import LineDivider from "../../components/LineDivider";
 import useFetch from "../../hooks/useFetch";
 
 const Dosen = () => {
-	const dosen = process.env.REACT_APP_DOSEN;
-	const data = useFetch(dosen);
+	const dosen = process.env.REACT_APP_API_KEY;
+	const data = useFetch(`${dosen}/dosen`);
 	return (
 		<>
 			<Header />

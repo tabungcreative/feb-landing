@@ -4,8 +4,8 @@ import HeadingLine from "../../../components/HeadingLine";
 import useFetch from "../../../hooks/useFetch";
 
 const Program = () => {
-	const program = process.env.REACT_APP_PROGRAM;
-	const data = useFetch(`${program}/?size=2`);
+	const program = process.env.REACT_APP_API_KEY;
+	const data = useFetch(`${program}/program/?size=2`);
 
 	return (
 		<div className="container-fluid bg-white p-3 mt-5">

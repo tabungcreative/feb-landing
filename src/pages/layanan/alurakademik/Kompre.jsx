@@ -7,7 +7,7 @@ const Kompre = () => {
 	return (
 		<>
 			<Header />
-			<ImageContent />
+			<ImageContent nama="https://is3.cloudhost.id/storage-feb/assets/images/alur-akademik/infografis%20feb-06.png" />
 			<Footer />
 		</>
 	);

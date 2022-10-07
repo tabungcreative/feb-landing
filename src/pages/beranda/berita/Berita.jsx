@@ -5,8 +5,8 @@ import useFetch from "../../../hooks/useFetch";
 import "../style.css";
 
 const Berita = () => {
-	const berita = process.env.REACT_APP_BERITA;
-	const data = useFetch(`${berita}/?size=3`);
+	const berita = process.env.REACT_APP_API_KEY;
+	const data = useFetch(`${berita}/berita/?size=3`);
 
 	return (
 		<>

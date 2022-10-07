@@ -7,8 +7,7 @@ const BimbinganSkripsi = () => {
 	return (
 		<>
 			<Header />
-			<ImageContent />
-			asdasdasd
+			<ImageContent nama="https://is3.cloudhost.id/storage-feb/assets/images/alur-akademik/infografis%20feb-05.png" />
 			<Footer />
 		</>
 	);

@@ -7,7 +7,7 @@ const PendaftaranMagang = () => {
 	return (
 		<>
 			<Header />
-			<ImageContent />
+			<ImageContent nama="https://is3.cloudhost.id/storage-feb/assets/images/alur-akademik/infografis%20feb-01.png" />
 			<Footer />
 		</>
 	);

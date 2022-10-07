@@ -5,8 +5,8 @@ import useFetch from "../../../hooks/useFetch";
 import "../style.css";
 
 const Pengumuman = () => {
-	const pengumuman = process.env.REACT_APP_PENGUMUMAN;
-	const data = useFetch(`${pengumuman}/?size=6`);
+	const pengumuman = process.env.REACT_APP_API_KEY;
+	const data = useFetch(`${pengumuman}/pengumuman/?size=6`);
 
 	return (
 		<div className="container-fluid bg-white p-3">

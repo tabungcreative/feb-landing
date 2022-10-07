@@ -6,8 +6,8 @@ import useFetch from "../../../hooks/useFetch";
 
 const PengumumanShow = () => {
 	const params = useParams();
-	const pengumuman = process.env.REACT_APP_PENGUMUMAN;
-	const data = useFetch(`${pengumuman}/${params.id}`);
+	const pengumuman = process.env.REACT_APP_API_KEY;
+	const data = useFetch(`${pengumuman}/pengumuman/${params.id}`);
 
 	return (
 		<>
@@ -21,7 +21,8 @@ const PengumumanShow = () => {
 							<>
 								<div>
 									<h3 className="text-black mt-5">{data.judul}</h3>
-									<iframe src={data.file_url} className="img-fluid img-thumbnail my-3" alt="iframe" title="frame pengumuman" style={{width: "100vw", height: "100vh"}} />
+									{}
+									<iframe src={data.file_url} className="img-fluid img-thumbnail my-3" alt="iframe" title="frame pengumuman" style={{width: "100%", height: "100vh"}} />
 									<div>
 										<a href={data.file_url} target="_blank" rel="noopener noreferrer">
 											download

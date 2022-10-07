@@ -6,8 +6,8 @@ import Footer from "../../../components/Footer";
 
 const ProgramShow = () => {
 	const params = useParams();
-	const program = process.env.REACT_APP_PROGRAM;
-	const data = useFetch(`${program}/${params.id}`);
+	const program = process.env.REACT_APP_API_KEY;
+	const data = useFetch(`${program}/program/${params.id}`);
 
 	return (
 		<>
@@ -19,8 +19,10 @@ const ProgramShow = () => {
 						{/* <HeadingLine name="Berita Terkini" /> */}
 						{data && (
 							<>
-								<h3 className="text-black mt-5">{data.nama_program}</h3>
-								<img src={data.gambar_url} className="img-fluid img-thumbnail my-3" alt="" style={{width: "100vw", height: "100vh"}} />
+								<h3 className="text-black mt-5 mb-3">{data.nama_program}</h3>
+								<div className="d-flex align-content-center justify-content-center mb-5">
+									<img src={data.gambar_url} className="img-fluid my-3" alt="" style={{maxWidth: "50%"}} />
+								</div>
 								<UnsafeComponent html={data.isi} />
 							</>
 						)}

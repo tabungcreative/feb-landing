@@ -5,8 +5,8 @@ import LineDivider from "../../components/LineDivider";
 import useFetch from "../../hooks/useFetch";
 
 const FileUnduhan = () => {
-	const unduhan = process.env.REACT_APP_UNDUHAN;
-	const data = useFetch(`${unduhan}/?size=10`);
+	const unduhan = process.env.REACT_APP_API_KEY;
+	const data = useFetch(`${unduhan}/unduhan/?size=10`);
 	return (
 		<>
 			<Header />
