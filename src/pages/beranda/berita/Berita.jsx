@@ -6,7 +6,7 @@ import "../style.css";
 
 const Berita = () => {
 	const berita = process.env.REACT_APP_API_KEY;
-	const data = useFetch(`${berita}/berita/?size=3`);
+	const {data: quote, loading, error} = useFetch(`${berita}/berita/?size=3`);
 
 	return (
 		<>
@@ -17,9 +17,9 @@ const Berita = () => {
 					</div>
 				</div>
 				<div className="row">
-					{/* {loading && <div>Tunggu Sebentar...</div>}
-					{error && <div>{`data gagal dimuat - ${error}`}</div>} */}
-					{data && data.map(brt => <CardBerita judul={brt.judul} gambar={brt.gambar_url} isi={brt.isi} tanggal={brt.created_at} id={brt.id} key={brt.id} />)}
+					{loading && <div>A moment please...</div>}
+					{error && <div>{`There is a problem fetching the post data - ${error}`}</div>}
+					{quote && quote.map(brt => <CardBerita judul={brt.judul} gambar={brt.gambar_url} isi={brt.isi} tanggal={brt.created_at} id={brt.id} key={brt.id} />)}
 				</div>
 			</div>
 		</>

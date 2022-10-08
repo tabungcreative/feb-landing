@@ -7,7 +7,7 @@ import useFetch from "../../../hooks/useFetch";
 const PengumumanShow = () => {
 	const params = useParams();
 	const pengumuman = process.env.REACT_APP_API_KEY;
-	const data = useFetch(`${pengumuman}/pengumuman/${params.id}`);
+	const {data: quote, loading, error} = useFetch(`${pengumuman}/pengumuman/${params.id}`);
 
 	return (
 		<>
@@ -17,18 +17,20 @@ const PengumumanShow = () => {
 				<div className="row">
 					<div className="col-lg-12 col-md-8 col-sm-6">
 						{/* <HeadingLine name="Berita Terkini" /> */}
-						{data && (
+						{quote && (
 							<>
+								{loading && <div>A moment please...</div>}
+								{error && <div>{`There is a problem fetching the post data - ${error}`}</div>}
 								<div>
-									<h3 className="text-black mt-5">{data.judul}</h3>
+									<h3 className="text-black mt-5">{quote.judul}</h3>
 									{}
-									<iframe src={data.file_url} className="img-fluid img-thumbnail my-3" alt="iframe" title="frame pengumuman" style={{width: "100%", height: "100vh"}} />
+									<iframe src={quote.file_url} className="img-fluid img-thumbnail my-3" alt="iframe" title="frame pengumuman" style={{width: "100%", height: "100vh"}} />
 									<div>
-										<a href={data.file_url} target="_blank" rel="noopener noreferrer">
+										<a href={quote.file_url} target="_blank" rel="noopener noreferrer">
 											download
 										</a>
 									</div>
-									<UnsafeComponent html={data.isi} />
+									<UnsafeComponent html={quote.isi} />
 								</div>
 							</>
 						)}

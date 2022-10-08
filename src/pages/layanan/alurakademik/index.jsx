@@ -15,6 +15,8 @@ const AlurAkademik = () => {
 						<h2 className="mt-5">Alur Akademik</h2>
 						<LineDivider />
 					</div>
+				</div>
+				<div className="row">
 					<Card nama="Alur Pendaftaran Magang" link="pendaftaran-magang" />
 					<Card nama="Alur Studi Ekskursi" link="studi-ekskursi" />
 					<Card nama="Alur Mata Kuliah Mengulang" link="mata-kuliah-mengulang" />

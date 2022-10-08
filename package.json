@@ -1,7 +1,7 @@
 {
-	"homepage": "./",
-	"name": "landing-feb",
 	"version": "0.1.0",
+	"homepage": "/",
+	"name": "landing-feb",
 	"private": true,
 	"overrides": {
 		"react-share": {
