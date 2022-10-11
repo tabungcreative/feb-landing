@@ -56,9 +56,6 @@ const Header = () => {
 							{/* <a href="/" target="_blank" rel="noopener noreferrer"> */}
 							<NavDropdown.Item>Pendaftaran Akademik</NavDropdown.Item>
 							{/* </a> */}
-							{/* <a href="/" target="_blank" rel="noopener noreferrer"> */}
-							<NavDropdown.Item>Perpustakaan</NavDropdown.Item>
-							{/* </a> */}
 						</NavDropdown>
 					</Nav>
 				</Navbar.Collapse>
