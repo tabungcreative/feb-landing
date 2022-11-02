@@ -15,16 +15,34 @@ const Dosen = () => {
 					<div className="col-lg-12 col-md-8 col-sm-6">
 						<h2 className="mt-5">Dosen Fakultas Ekonomi dan Bisnis</h2>
 						<LineDivider />
-						<p>daftar dosen fakultas</p>
+						<div className="table-responsive">
+							<table className="table table-striped table-hover ">
+								<thead className="bg-light">
+									<tr>
+										<th>No</th>
+										<th>Nidn</th>
+										<th>Nama</th>
+										<th>Prodi</th>
+									</tr>
+								</thead>
+								<tbody>
+									{quote &&
+										quote.map(dsn => (
+											<>
+												<tr>
+													<td>#</td>
+													<td>{dsn.nidn}</td>
+													<td>{dsn.nama}</td>
+													<td>{dsn.prodi}</td>
+												</tr>
+											</>
+										))}
+								</tbody>
+							</table>
+						</div>
 						<ul className="mb-5">
 							{loading && <div>A moment please...</div>}
 							{error && <div>{`There is a problem fetching the post data - ${error}`}</div>}
-							{quote &&
-								quote.map(dsn => (
-									<>
-										<li>{dsn.nama}</li>
-									</>
-								))}
 						</ul>
 					</div>
 				</div>

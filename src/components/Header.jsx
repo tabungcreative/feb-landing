@@ -14,7 +14,7 @@ const Header = () => {
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className="ms-auto">
+					<Nav className="ms-auto medium">
 						<LinkContainer to="/">
 							<Nav.Link>Beranda</Nav.Link>
 						</LinkContainer>
@@ -53,9 +53,16 @@ const Header = () => {
 							<LinkContainer to="/file-unduhan">
 								<NavDropdown.Item>File Unduhan</NavDropdown.Item>
 							</LinkContainer>
-							{/* <a href="/" target="_blank" rel="noopener noreferrer"> */}
-							<NavDropdown.Item>Pendaftaran Akademik</NavDropdown.Item>
-							{/* </a> */}
+							<NavDropdown.Item>
+								<a href="https://diaregsy.feb-unsiq.ac.id/" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", color: "#000"}}>
+									Pendaftaran Akademik
+								</a>
+							</NavDropdown.Item>
+							<NavDropdown.Item>
+								<a href="https://digilib.feb-unsiq.ac.id/" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", color: "#000"}}>
+									Perpustakaan
+								</a>
+							</NavDropdown.Item>
 						</NavDropdown>
 					</Nav>
 				</Navbar.Collapse>

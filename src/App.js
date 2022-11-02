@@ -1,4 +1,6 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import "./index.css";
+import "./App.css";
 import Beranda from "./pages/beranda";
 import Sejarah from "./pages/profil/Sejarah";
 import StrukturOrganisasi from "./pages/profil/StrukturOrganisasi";
@@ -12,7 +14,6 @@ import PengumumanShow from "./pages/beranda/pengumuman/PengumumanShow";
 import ProgramShow from "./pages/beranda/program/ProgramShow";
 import AlurAkademik from "./pages/layanan/alurakademik";
 import PendaftaranMagang from "./pages/layanan/alurakademik/PendaftaranMagang";
-import "./App.css";
 import StudiEkskursi from "./pages/layanan/alurakademik/StudiEkskursi";
 import KuliahMengulang from "./pages/layanan/alurakademik/KuliahMengulang";
 import Sempro from "./pages/layanan/alurakademik/Sempro";
@@ -23,6 +24,8 @@ import KuliahSP from "./pages/layanan/alurakademik/KuliahSP";
 import FileUnduhan from "./pages/layanan/FIleUnduhan";
 import Dosen from "./pages/profil/Dosen";
 import Fasilitas from "./pages/profil/Fasilitas";
+import BeritaAll from "./pages/beranda/berita/BeritaAll";
+import PengumumanAll from "./pages/beranda/pengumuman/PengumumanAll";
 
 function App() {
 	return (
@@ -30,7 +33,9 @@ function App() {
 			<Routes>
 				{/* routing halaman index atau beranda */}
 				<Route path="" element={<Beranda />} />
+				<Route path="/berita" element={<BeritaAll />} />
 				<Route path="/berita/:id" element={<BeritaShow />} />
+				<Route path="/pengumuman" element={<PengumumanAll />} />
 				<Route path="/pengumuman/:id" element={<PengumumanShow />} />
 				<Route path="/program/:id" element={<ProgramShow />} />
 				{/* routing bagian profil */}

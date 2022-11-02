@@ -34,16 +34,16 @@ const BeritaShow = () => {
 								</div>
 								<div className="d-flex align-items-center my-2">
 									<FacebookShareButton className="me-2" url={window.location.href}>
-										<FacebookIcon size={40} />
+										<FacebookIcon className="rounded-circle" size={40} />
 									</FacebookShareButton>{" "}
 									<WhatsappShareButton className="me-2" url={window.location.href}>
-										<WhatsappIcon size={40} />
+										<WhatsappIcon className="rounded-circle" size={40} />
 									</WhatsappShareButton>{" "}
 									<TelegramShareButton className="me-2" url={window.location.href}>
-										<TelegramIcon size={40} />
+										<TelegramIcon className="rounded-circle" size={40} />
 									</TelegramShareButton>{" "}
 									<TwitterShareButton url={window.location.href}>
-										<TwitterIcon size={40} />
+										<TwitterIcon className="rounded-circle" size={40} />
 									</TwitterShareButton>{" "}
 								</div>
 								<img src={quote.gambar_url} className="img-fluid img-thumbnail my-3" alt="" style={{width: "100%"}} />

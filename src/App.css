@@ -26,12 +26,16 @@ a.text-gray:hover {
 .separator .line {
 	flex: 1;
 	height: 3px;
-	background-color: #b6b7b7;
+	background-color: #930909;
 	margin-left: 1rem;
 }
 
 .btn.btn-base {
 	background-color: #930909;
+	color: #ffffff;
+}
+.btn.btn-base:hover {
+	background-color: #810909;
 	color: #ffffff;
 }
 a.btn.btn-base:hover {
@@ -57,6 +61,7 @@ a.btn.btn-base:hover {
 .akademik-card {
 	text-decoration: none;
 }
+
 Link {
 	color: black;
 	text-decoration: none;
@@ -73,4 +78,20 @@ Link {
 }
 .download:hover {
 	color: #930909;
+}
+
+#link {
+	text-decoration: none;
+	color: #000000 !important;
+}
+#link:hover {
+	color: #930909 !important;
+}
+.left-line {
+	border-left: 3px solid #930909;
+	padding-left: 10px;
+}
+
+.medium {
+	font-weight: 600;
 }

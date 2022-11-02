@@ -17,7 +17,7 @@ const FileUnduhan = () => {
 						<LineDivider />
 						<p>Daftar file unduhan fakultas ekonomi dan bisnis</p>
 						<div className="table-responsive mb-5">
-							<table className="table table-striped table-hover ">
+							<table className="table table-striped table-hover">
 								<thead className="bg-light">
 									<tr>
 										<th>No</th>
