@@ -6,7 +6,7 @@ import useFetch from "../../../hooks/useFetch";
 
 const BeritaAll = () => {
 	const berita = process.env.REACT_APP_API_KEY;
-	const {data: quote, loading, error} = useFetch(`${berita}/berita/?size=3`);
+	const {data: quote, loading, error} = useFetch(`${berita}/berita`);
 
 	return (
 		<>

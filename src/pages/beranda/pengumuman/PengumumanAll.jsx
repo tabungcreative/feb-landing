@@ -30,7 +30,7 @@ export default PengumumanAll;
 const CardPengumuman = props => {
 	return (
 		<div className="col-md-10 mt-5 mx-auto">
-			<Link to={"/berita/" + props.id} id="link">
+			<Link to={"/pengumuman/" + props.id} id="link">
 				<div className="card shadow-sm border-0 hover-shadow">
 					<div className="card-body my-0">
 						<h5 className="card-title mb-3 my-0" style={{maxHeight: "3rem", overflow: "hidden"}}>
