@@ -17,7 +17,7 @@ const Fasilitas = () => {
 						<LineDivider />
 						{loading && <div>A moment please...</div>}
 						{error && <div>{`There is a problem fetching the post data - ${error}`}</div>}
-						{quote && quote.map(fls => <CardFasilitas nama={fls.nama_fasilitas} gambar={fls.gambar_url} deskripsi={fls.isi} />)}
+						{quote && quote.data.map(fls => <CardFasilitas nama={fls.nama_fasilitas} gambar={fls.gambar_url} deskripsi={fls.isi} />)}
 					</div>
 				</div>
 			</div>

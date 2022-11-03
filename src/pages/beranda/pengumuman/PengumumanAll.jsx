@@ -16,7 +16,7 @@ const PengumumanAll = () => {
 					<div className="col-lg-12 col-md-8 col-sm-6">
 						{loading && <div>A moment please...</div>}
 						{error && <div>{`There is a problem fetching the post data - ${error}`}</div>}
-						{quote && quote.map(brt => <CardPengumuman judul={brt.judul} isi={brt.isi} tanggal={brt.created_at} id={brt.id} key={brt.id} />)}
+						{quote && quote.data.map(brt => <CardPengumuman judul={brt.judul} isi={brt.isi} tanggal={brt.created_at} id={brt.id} key={brt.id} />)}
 					</div>
 				</div>
 			</div>

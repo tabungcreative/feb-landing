@@ -8,7 +8,8 @@ import "../style.css";
 
 const Pengumuman = () => {
 	const pengumuman = process.env.REACT_APP_API_KEY;
-	const {data: quote, loading, error} = useFetch(`${pengumuman}/pengumuman/?size=6`);
+	const {data: quote, loading, error} = useFetch(`${pengumuman}/pengumuman?page_size=6`);
+	console.log(`${pengumuman}/pengumuman`);
 
 	return (
 		<div className="container-fluid bg-white p-3">
@@ -21,7 +22,7 @@ const Pengumuman = () => {
 				<div className="row">
 					{loading && <div>A moment please...</div>}
 					{error && <div>{`There is a problem fetching the post data - ${error}`}</div>}
-					{quote && quote.map(pgn => <CardPengumuman judul={pgn.judul} gambar={pgn.gambar_url} isi={pgn.isi} tanggal={pgn.created_at} id={pgn.id} key={pgn.id} />)}
+					{quote && quote.data.map(pgn => <CardPengumuman judul={pgn.judul} gambar={pgn.gambar_url} isi={pgn.isi} tanggal={pgn.created_at} id={pgn.id} key={pgn.id} />)}
 				</div>
 				<Link to={"/pengumuman"} className="btn btn-base mt-3">
 					Pengumuman Lainnya <FaArrowRight />

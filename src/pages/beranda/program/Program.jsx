@@ -5,7 +5,7 @@ import useFetch from "../../../hooks/useFetch";
 
 const Program = () => {
 	const program = process.env.REACT_APP_API_KEY;
-	const {data: quote, loading, error} = useFetch(`${program}/program/?size=2`);
+	const {data: quote, loading, error} = useFetch(`${program}/program?page_size=2`);
 
 	return (
 		<div className="container-fluid bg-white p-3 mt-5">
@@ -14,7 +14,7 @@ const Program = () => {
 					<HeadingLine name="Program Kami"></HeadingLine>
 					{loading && <div>A moment please...</div>}
 					{error && <div>{`There is a problem fetching the post data - ${error}`}</div>}
-					{quote && quote.map(pgr => <CardProgram button={pgr.nama_program} gambar={pgr.gambar_url} id={pgr.id} key={pgr.id} />)}
+					{quote && quote.data.map(pgr => <CardProgram button={pgr.nama_program} gambar={pgr.gambar_url} id={pgr.id} key={pgr.id} />)}
 				</div>
 			</div>
 		</div>

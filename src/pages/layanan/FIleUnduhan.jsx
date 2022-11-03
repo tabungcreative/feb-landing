@@ -6,7 +6,7 @@ import useFetch from "../../hooks/useFetch";
 
 const FileUnduhan = () => {
 	const unduhan = process.env.REACT_APP_API_KEY;
-	const {data: quote, loading, error} = useFetch(`${unduhan}/unduhan/?size=10`);
+	const {data: quote, loading, error} = useFetch(`${unduhan}/unduhan/?page_size=10`);
 	return (
 		<>
 			<Header />
@@ -29,7 +29,7 @@ const FileUnduhan = () => {
 									{loading && <div>A moment please...</div>}
 									{error && <div>{`There is a problem fetching the post data - ${error}`}</div>}
 									{quote &&
-										quote.map(und => (
+										quote.data.map(und => (
 											<>
 												<tr>
 													<td>#</td>
