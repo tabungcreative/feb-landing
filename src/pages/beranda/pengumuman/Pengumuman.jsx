@@ -51,7 +51,6 @@ const CardPengumuman = props => {
 					</div>
 				</div>
 			</Link>
-			;
 		</div>
 	);
 };

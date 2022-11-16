@@ -32,7 +32,7 @@ const Sejarah = () => {
 							yang unggul dibidang Manajemen, Akuntansi, dan Perbankan Syariah yang tidak pernah meninggalkan nilai-nilai Islami.
 						</p>
 						<h5 className="h5 mt-5">B. Program Studi dan Status Akreditasi / Ijin Penyelenggaraan</h5>
-						<p className="text-gray">Tabel 1. Program Studi dan Status Akademik Fakultas Ekonomi dan Bisnis</p>
+						<p className="text-gray">Program Studi dan Status Akademik Fakultas Ekonomi dan Bisnis</p>
 						<div className="table-responsive">
 							<table className="table table-bordered ">
 								<thead className="bg-light">
@@ -101,14 +101,14 @@ const Sejarah = () => {
 									</tr>
 									<tr>
 										<td>4</td>
-										<td>Drs.Muntahar, M.M.</td>
+										<td>Drs. Muntohar, M.M.</td>
 										<td>Fakultas Ekonomi</td>
 										<td>2013 s/d 2017</td>
 									</tr>
 									<tr>
 										<td>5</td>
-										<td>Hermawan, S.T, M.M.</td>
-										<td>Fakultas Ekonomi</td>
+										<td>Dr. Hermawan, S.T, M.M, M.T</td>
+										<td>Fakultas Ekonomi dan Bisnis</td>
 										<td>2017 s/d 2021</td>
 									</tr>
 									<tr>
@@ -122,7 +122,7 @@ const Sejarah = () => {
 						</div>
 						<h5 className="h5 mt-5">D. Kepemimpinan Fakultas Ekonomi UNSIQ 2021-2025</h5>
 						<div className="p-2">Dekan : Dr. H. M. Elfan Kaukab, S.E., M.M., MFP, CMA, CHRA, CRBC.</div>
-						<div className="p-2">Wakil dekan : Romandhon, S.E., M.M., MFP</div>
+						<div className="p-2">Wakil dekan : Romandhon, S.E., M.M.</div>
 					</div>
 				</div>
 			</div>

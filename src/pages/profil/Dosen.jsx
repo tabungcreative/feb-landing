@@ -27,10 +27,10 @@ const Dosen = () => {
 								</thead>
 								<tbody>
 									{quote &&
-										quote.map(dsn => (
+										quote.map((dsn, index) => (
 											<>
 												<tr>
-													<td>#</td>
+													<td>{index + 1}</td>
 													<td>{dsn.nidn}</td>
 													<td>{dsn.nama}</td>
 													<td>{dsn.prodi}</td>
