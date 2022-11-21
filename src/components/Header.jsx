@@ -53,15 +53,11 @@ const Header = () => {
 							<LinkContainer to="/file-unduhan">
 								<NavDropdown.Item>File Unduhan</NavDropdown.Item>
 							</LinkContainer>
-							<NavDropdown.Item>
-								<a href="https://diaregsy.feb-unsiq.ac.id" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", color: "#000"}}>
-									Pendaftaran Akademik
-								</a>
+							<NavDropdown.Item href="https://diaregsy.feb-unsiq.ac.id" target="_blank">
+								Pendaftaran Akademik
 							</NavDropdown.Item>
-							<NavDropdown.Item>
-								<a href="https://digilib.feb-unsiq.ac.id" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", color: "#000"}}>
-									Perpustakaan
-								</a>
+							<NavDropdown.Item href="https://digilib.feb-unsiq.ac.id" target="_blank">
+								Perpustakaan
 							</NavDropdown.Item>
 						</NavDropdown>
 					</Nav>
