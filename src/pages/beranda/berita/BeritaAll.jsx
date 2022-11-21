@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import ReactPaginate from "react-paginate";
 import {Link} from "react-router-dom";
 import Footer from "../../../components/Footer";
@@ -7,10 +7,10 @@ import useFetch from "../../../hooks/useFetch";
 
 const BeritaAll = () => {
 	const berita = process.env.REACT_APP_API_KEY;
-	const {data: quote, loading, error} = useFetch(`${berita}/berita`);
-	console.log(quote);
+	const [currentPage, setCurrentPage] = useState(1);
+	const {data: quote, loading, error} = useFetch(`${berita}/berita?page=${currentPage}&page_size=10`);
 	const handlePageClick = data => {
-		console.log(data.selected);
+		setCurrentPage(data.selected + 1);
 	};
 
 	return (
@@ -28,7 +28,7 @@ const BeritaAll = () => {
 							previousLabel={"<<"}
 							nextLabel={">>"}
 							breakLabel={"..."}
-							pageCount={25}
+							pageCount={10}
 							marginPagesDisplayed={2}
 							pageRangeDisplayed={3}
 							onPageChange={handlePageClick}
