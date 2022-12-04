@@ -27,7 +27,6 @@ const AlurAkademik = () => {
 					<Card nama="Alur Pendaftaran SP" link="pendaftaran-sp" />
 				</div>
 			</div>
-
 			<Footer />
 		</div>
 	);
@@ -40,10 +39,9 @@ const Card = props => {
 		<div className="col-md-4 my-4">
 			<Link to={props.link} className="akademik-card">
 				<div className="card rounded-lg">
-					<div className="card-body bg-base text-white">
-						<div className="d-flex align-items-center">
-							<BsClock className="me-3" style={{width: "70", height: "70"}} />.<h4 className="card-title p-2 card-left">{props.nama}</h4>
-						</div>
+					<div className="card-body bg-base text-white d-flex align-items-center">
+						<BsClock className="me-3" size={50} />
+						<h6 className="card-title card-left d-flex align-items-center p-3">{props.nama}</h6>
 					</div>
 				</div>
 			</Link>

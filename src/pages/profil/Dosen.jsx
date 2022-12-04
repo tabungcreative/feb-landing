@@ -33,7 +33,7 @@ const Dosen = () => {
 													<td>{index + 1}</td>
 													<td>{dsn.nidn}</td>
 													<td>{dsn.nama}</td>
-													<td>{dsn.prodi}</td>
+													<td style={{textTransform: "capitalize"}}>{dsn.prodi}</td>
 												</tr>
 											</>
 										))}

@@ -12,22 +12,22 @@ const Sejarah = () => {
 				<div className="row">
 					<div className="col-lg-12 col-md-8 col-sm-6">
 						<h5 className="h5">A. Sejarah Singkat Perkembangan Fakultas Ekonomi</h5>
-						<p>
+						<p align="justify">
 							Fakultas Ekonomi Universitas Sains Al-Qur’an (UNSIQ) Jawa Tengah di Wonosobo merupakan perubahan dan pengembangan dari Sekolah Tinggi Ilmu Ekonomi (STIE) YPIIQ yang didirikan pada tahun 1999 dengan 2 program studi yakni :
 							Program Program Studi Manajemen (S1) dan Program Studi Akuntansi (S1) sesuai dengan Surat Keputusan Menteri Pendidikan Nasional RI melalui Dirjen Dikti RI Nomor : 29/D/0/1999 tanggal 23 Februari 1999. Hal ini karena adanya
 							tuntutan dari berbagai pihak pengguna yang terkait dengan bidang ekonomi, serta perekonomian yang semakin berkembang, maka Yayasan Pendidikan Ilmu-Ilmu Al Quran (YPIIQ) berinisiatif untuk menggagas mendirikan STIE YPIIQ dengan
 							mengembangkan pendidikan secara terpadu dengan nuansa ilmu pengetahuan, ekonomi dan religiusitas.
 						</p>
-						<p>
+						<p align="justify">
 							Pada tahun 2001 dengan berdirinya UNSIQ, maka STIE YPIIQ berubah menjadi Fakultas Ekonomi dengan Program Studi Manajemen dan Akutansi, sesuai dengan Perubahan menjadi Universitas Sains Al-Qur'an Surat Keputusan Dirjen Dikti
 							Departemen Pendidikan Nasional RI Nomor 87/D/0/2001.
 						</p>
-						<p>
+						<p align="justify">
 							Berdasarkan Surat Keputusan Rektor Universitas Sains Al-Qur’an Nomor : 218/SK/UNSIQ/XII/2019 pada tanggal 14 Desember 2019 Fakultas Ekonomi berubah nama menjadi Fakultas Ekonomi dan Bisnis. Kemudian berdasarkan Surat Keputusan
 							Rektor Universitas Sains Al-Qur’an Nomor: 179/SK/UNSIQ/IX/2021 dengan bergabungnya Program Studi Perbankan Syari’ah dengan Fakultas Ekonomi dan Bisnis, maka Fakultas Ekonomi dan Bisnis telah memiliki tiga Program Studi yang
 							telah berstatus Terakreditasi BAN-PT dengan nilai masing-masing Prodi B.
 						</p>
-						<p>
+						<p align="justify">
 							Keberadaan Fakultas Ekonomi dan Bisnis UNSIQ saat ini sebagai jawaban dari tuntutan yang ada dan sekaligus menjadi tantangan bagi FEB UNSIQ untuk menghasilkan para lulusan yang berdaya saing tinggi serta mempunyai kompetensi
 							yang unggul dibidang Manajemen, Akuntansi, dan Perbankan Syariah yang tidak pernah meninggalkan nilai-nilai Islami.
 						</p>
