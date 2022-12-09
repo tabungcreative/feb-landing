@@ -113,7 +113,7 @@ const Sejarah = () => {
 									</tr>
 									<tr>
 										<td>6</td>
-										<td>Dr. H. M. Elfan Kaukab, S.E., M.M., MFP, CMA, CHRA, CRBC.</td>
+										<td>Dr. M. Elfan Kaukab., S.E., M.M., M.H.I.</td>
 										<td>Fakultas Ekonomi dan Bisnis</td>
 										<td>2021 s/d 2025</td>
 									</tr>
@@ -121,7 +121,7 @@ const Sejarah = () => {
 							</table>
 						</div>
 						<h5 className="h5 mt-5">D. Kepemimpinan Fakultas Ekonomi UNSIQ 2021-2025</h5>
-						<div className="p-2">Dekan : Dr. H. M. Elfan Kaukab, S.E., M.M., MFP, CMA, CHRA, CRBC.</div>
+						<div className="p-2">Dekan : Dr. M. Elfan Kaukab., S.E., M.M., M.H.I.</div>
 						<div className="p-2">Wakil dekan : Romandhon, S.E., M.M.</div>
 					</div>
 				</div>
