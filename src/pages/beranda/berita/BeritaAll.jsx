@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import ReactPaginate from "react-paginate";
 import {Link} from "react-router-dom";
 import Footer from "../../../components/Footer";
@@ -8,7 +8,19 @@ import useFetch from "../../../hooks/useFetch";
 const BeritaAll = () => {
 	const berita = process.env.REACT_APP_API_KEY;
 	const [currentPage, setCurrentPage] = useState(1);
-	const {data: quote, loading, error} = useFetch(`${berita}/berita?page=${currentPage}&page_size=10`);
+	const [pageCount, setpageCount] = useState(0);
+
+	let limit = 10;
+	const {data: quote, loading, error, total} = useFetch(`${berita}/berita?page=${currentPage}&page_size=${limit}`);
+
+	useEffect(() => {
+		const getPages = async () => {
+			setpageCount(Math.ceil(total / limit));
+		};
+
+		getPages();
+	}, [limit, total]);
+
 	const handlePageClick = data => {
 		setCurrentPage(data.selected + 1);
 	};
@@ -28,9 +40,9 @@ const BeritaAll = () => {
 							previousLabel={"<<"}
 							nextLabel={">>"}
 							breakLabel={"..."}
-							pageCount={10}
+							pageCount={pageCount}
 							marginPagesDisplayed={2}
-							pageRangeDisplayed={3}
+							pageRangeDisplayed={2}
 							onPageChange={handlePageClick}
 							containerClassName={"pagination justify-content-center"}
 							pageClassName={"page-item"}
