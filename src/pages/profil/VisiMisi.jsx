@@ -40,7 +40,7 @@ const VisiMisi = () => {
 							<li>Agar kualitas kinerja Lembaga meningkat secara berkesinambungan.</li>
 							<li>Agar dapat mengembangkan dan meningkatkan kualitas Tri Darma Perguruan Tinggi lembaga .</li>
 						</ul>
-						<h5 className="mt-3">Strategi</h5>
+						<h5 className="mt-3">5. Strategi</h5>
 						<ul>
 							<li>Melakukan penataan kurikulum yang memadukan ilmu Al Quran dan ilmu ekonomi dengan nilai-nilai kepesantrenan.</li>
 							<li>Melakukan penataan kurikulum yang memadukan ilmu Al Quran dan ilmu ekonomi dengan nilai-nilai kepesantrenan.</li>
