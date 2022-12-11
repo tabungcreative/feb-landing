@@ -58,6 +58,9 @@ a.btn.btn-base:hover {
 .bg-base {
 	background-color: #930909;
 }
+.bg-gradasi {
+	background-image: linear-gradient(to left, #930909, rgb(218, 6, 6));
+}
 .akademik-card {
 	text-decoration: none;
 }

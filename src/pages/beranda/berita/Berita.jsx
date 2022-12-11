@@ -10,20 +10,22 @@ const Berita = () => {
 
 	return (
 		<>
-			<div className="container">
-				<div className="row">
-					<div className="col-lg-12 col-md-8 col-sm-6">
-						<HeadingLine name="Berita Terkini"></HeadingLine>
+			<div className="container-fluid p-3">
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-12 col-md-8 col-sm-6">
+							<HeadingLine name="Berita Terkini"></HeadingLine>
+						</div>
 					</div>
+					<div className="row">
+						{loading && <div>A moment please...</div>}
+						{error && <div>{`There is a problem fetching the post data - ${error}`}</div>}
+						{quote && quote.data.map(brt => <CardBerita judul={brt.judul} gambar={brt.gambar_url} isi={brt.isi} tanggal={brt.created_at} id={brt.id} key={brt.id} />)}
+					</div>
+					<Link to={"/berita"} className="btn btn-base mt-3">
+						Berita Lainnya <FaArrowRight />
+					</Link>
 				</div>
-				<div className="row">
-					{loading && <div>A moment please...</div>}
-					{error && <div>{`There is a problem fetching the post data - ${error}`}</div>}
-					{quote && quote.data.map(brt => <CardBerita judul={brt.judul} gambar={brt.gambar_url} isi={brt.isi} tanggal={brt.created_at} id={brt.id} key={brt.id} />)}
-				</div>
-				<Link to={"/berita"} className="btn btn-base mt-3">
-					Berita Lainnya <FaArrowRight />
-				</Link>
 			</div>
 		</>
 	);

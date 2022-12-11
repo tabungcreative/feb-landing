@@ -15,8 +15,8 @@ const Beranda = () => {
 			<Hero />
 			<div className="container mt-3 p-3">
 				<div className="row d-flex align-items-center mt-3">
-					<div className="col-lg-5 mb-4">
-						<img src="https://is3.cloudhost.id/storage-feb/assets/images/logo_feb.png" className="img-fluid" alt="logo feb" />
+					<div className="col-lg-5 text-center mb-4">
+						<img src="https://is3.cloudhost.id/storage-feb/assets/images/logo_feb.png" className="img-fluid w-50" alt="logo feb" />
 					</div>
 					<div className="col-lg-2 d-flex justify-content-center">
 						<div className="vl"></div>
