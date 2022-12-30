@@ -51,8 +51,8 @@ const Footer = () => {
 							<li>Jl. KH. Hasyim Asy'ari Km. 03, Kalibeber,</li>
 							<li>Kec. Mojotengah, Kab. Wonosobo,</li>
 							<li>Jawa Tengah - 56351</li>
-							<li>Telp. : (0286) ******</li>
-							<li>Whatsapp. : (0286) *******</li>
+							<li>Telp. : (0286) 3396204</li>
+							{/* <li>Whatsapp. : (0286) *******</li> */}
 						</ul>
 					</MDBCol>
 				</MDBRow>

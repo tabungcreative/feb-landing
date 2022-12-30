@@ -22,6 +22,8 @@ const Dosen = () => {
 										<th>No</th>
 										<th>Nidn</th>
 										<th>Nama</th>
+										<th>Pendidikan Terakhir</th>
+										<th>Bidang Keilmuan</th>
 										<th>Prodi</th>
 									</tr>
 								</thead>
@@ -33,6 +35,8 @@ const Dosen = () => {
 													<td>{index + 1}</td>
 													<td>{dsn.nidn}</td>
 													<td>{dsn.nama}</td>
+													<td>{dsn.lulusan_terakhir}</td>
+													<td>{dsn.keilmuan}</td>
 													<td style={{textTransform: "capitalize"}}>{dsn.prodi}</td>
 												</tr>
 											</>

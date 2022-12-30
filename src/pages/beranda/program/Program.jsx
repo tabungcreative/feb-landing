@@ -29,7 +29,7 @@ const CardProgram = props => {
 			<div className="card border-0">
 				<div className="card-body">
 					<div className="d-grid gap-2">
-						<img className="card-img-top img-fluid ms-auto me-auto" src={props.gambar} alt={props.alt} style={{height: "20rem", width: "20rem"}} />
+						<img className="card-img-top img-fluid ms-auto me-auto" src={props.gambar} alt={props.alt} style={{width: "100%"}} />
 						<Link to={"/program/" + props.id} className="btn btn-base fw-bold btn-xl mt-3">
 							{props.button}
 						</Link>
