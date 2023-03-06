@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import {Link} from "react-router-dom";
+import errimg from "../assets/images/error.png";
 
 const ErrorPage = () => {
 	return (
@@ -15,7 +16,7 @@ const ErrorPage = () => {
 			<div className="d-flex align-items-center justify-content-center vh-100">
 				<div className="text-center row">
 					<div className=" col-md-6">
-						<img src="https://is3.cloudhost.id/storage-feb/assets/images/error.png" alt="gambar error" className="img-fluid" />
+						<img src={errimg} alt="gambar error" className="img-fluid" />
 					</div>
 					<div className=" col-md-6 mt-5">
 						<p className="fs-3">

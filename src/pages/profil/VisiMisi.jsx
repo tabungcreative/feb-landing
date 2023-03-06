@@ -2,12 +2,13 @@ import React from "react";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import img from "../../assets/images/banner/BANNER3.png";
 
 const VisiMisi = () => {
 	return (
 		<>
 			<Header />
-			<Banner gambar="https://is3.cloudhost.id/storage-feb/assets/images/BANNER3.png" alt="gambar banner visi misi" />
+			<Banner gambar={img} alt="gambar banner visi misi" />
 			<div className="container mt-5">
 				<div className="row">
 					<div className="col-lg-12 col-md-8 col-sm-4">

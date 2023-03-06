@@ -3,13 +3,15 @@ import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import ImageContent from "../../components/ImageContent";
+import imgBanner from "../../assets/images/banner/BANNER4.png";
+import imgContent from "../../assets/images/struktur.png";
 
 const StrukturOrganisasi = () => {
 	return (
 		<>
 			<Header />
-			<Banner gambar="https://is3.cloudhost.id/storage-feb/assets/images/BANNER4.png" alt="banner struktur organisasi" />
-			<ImageContent nama="https://is3.cloudhost.id/storage-feb/assets/images/STRUKTUR%20ORGANISASI%20FEB%20UNSIQ%20film.png" />
+			<Banner gambar={imgBanner} alt="banner struktur organisasi" />
+			<ImageContent nama={imgContent} alt="struktur organisasi feb" />
 			<Footer />
 		</>
 	);
