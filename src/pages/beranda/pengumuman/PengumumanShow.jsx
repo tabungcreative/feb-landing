@@ -24,9 +24,9 @@ const PengumumanShow = () => {
 								<div>
 									<h3 className="text-black mt-5">{quote.judul}</h3>
 									{}
-									<iframe src={quote.file_url} className="img-fluid img-thumbnail my-3" alt="iframe" title="frame pengumuman" style={{width: "100%", height: "100vh"}} />
+									{/* <embed src={"https://ebfis.feb-unsiq.ac.id/storage/" + quote.file_path} className="img-fluid img-thumbnail my-3" alt="iframe" title="frame pengumuman" style={{width: "100%", height: "100vh"}} /> */}
 									<div>
-										<a href={quote.file_url} target="_blank" rel="noopener noreferrer">
+										<a href={"https://ebfis.feb-unsiq.ac.id/storage/" + quote.file_path} target="_blank" rel="noopener noreferrer">
 											download
 										</a>
 									</div>

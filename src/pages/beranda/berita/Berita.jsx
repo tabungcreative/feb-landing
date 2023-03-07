@@ -38,7 +38,7 @@ const CardBerita = props => {
 		<div className="col-md-4 mt-3">
 			<Link to={"/berita/" + props.id} id="link">
 				<div className="card shadow-sm border-0 hover-shadow">
-					<img src={"https://ebfis.feb-unsiq.ac.id/berita/" + props.gambar} className="card-img-top img-thumbnail img-fluid " alt="..." />
+					<img src={"https://ebfis.feb-unsiq.ac.id/storage/" + props.gambar} className="card-img-top img-thumbnail img-fluid " alt="..." />
 					<div className="card-body my-0">
 						<h5 className="card-title mb-3 my-0" style={{maxHeight: "3rem", overflow: "hidden"}}>
 							{props.judul}

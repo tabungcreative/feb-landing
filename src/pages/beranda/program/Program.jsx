@@ -14,7 +14,7 @@ const Program = () => {
 					<HeadingLine name="Program Kami"></HeadingLine>
 					{loading && <div>A moment please...</div>}
 					{error && <div>{`There is a problem fetching the post data - ${error}`}</div>}
-					{quote && quote.data.map(pgr => <CardProgram button={pgr.nama_program} gambar={pgr.gambar_url} id={pgr.id} key={pgr.id} />)}
+					{quote && quote.data.map(pgr => <CardProgram button={pgr.nama_program} gambar={pgr.gambar_path} id={pgr.id} key={pgr.id} />)}
 				</div>
 			</div>
 		</div>
@@ -29,7 +29,7 @@ const CardProgram = props => {
 			<div className="card border-0">
 				<div className="card-body">
 					<div className="d-grid gap-2">
-						<img className="card-img-top img-fluid ms-auto me-auto" src={props.gambar} alt={props.alt} style={{width: "100%"}} />
+						<img className="card-img-top img-fluid ms-auto me-auto" src={"https://ebfis.feb-unsiq.ac.id/storage/" + props.gambar} alt={props.alt} style={{width: "100%"}} />
 						<Link to={"/program/" + props.id} className="btn btn-base fw-bold btn-xl mt-3">
 							{props.button}
 						</Link>

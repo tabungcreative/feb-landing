@@ -46,7 +46,7 @@ const BeritaShow = () => {
 										<TwitterIcon className="rounded-circle" size={40} />
 									</TwitterShareButton>{" "}
 								</div>
-								<img src={quote.gambar_url} className="img-fluid img-thumbnail my-3" alt="" style={{width: "100%"}} />
+								<img src={"https://ebfis.feb-unsiq.ac.id/storage/" + quote.gambar_path} className="img-fluid img-thumbnail my-3" alt="" style={{width: "100%"}} />
 								<UnsafeComponent html={quote.isi} />
 							</>
 						)}

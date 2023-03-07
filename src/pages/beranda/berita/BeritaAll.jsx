@@ -33,7 +33,7 @@ const BeritaAll = () => {
 					<div className="col-lg-12 col-md-8 col-sm-6">
 						{loading && <div>A moment please...</div>}
 						{error && <div>{`There is a problem fetching the post data - ${error}`}</div>}
-						{quote && quote.data.map(brt => <CardBerita judul={brt.judul} gambar={brt.gambar_url} isi={brt.isi} tanggal={brt.created_at} id={brt.id} key={brt.id} />)}
+						{quote && quote.data.map(brt => <CardBerita judul={brt.judul} gambar={brt.gambar_path} isi={brt.isi} tanggal={brt.created_at} id={brt.id} key={brt.id} />)}
 					</div>
 					<div className="mt-5 mb-5">
 						<ReactPaginate
@@ -70,7 +70,7 @@ const CardBerita = props => {
 				<div className="card mb-3 border-0 shadow-sm">
 					<div className="row g-0">
 						<div className="col-md-4">
-							<img src={props.gambar} className="img-fluid rounded-start" alt="..." />
+							<img src={"https://ebfis.feb-unsiq.ac.id/storage/" + props.gambar} className="img-fluid rounded-start" alt="..." />
 						</div>
 						<div className="col-md-8">
 							<div className="card-body">

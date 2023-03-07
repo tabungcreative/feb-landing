@@ -34,7 +34,7 @@ const Fasilitas = () => {
 						<LineDivider />
 						{loading && <div>A moment please...</div>}
 						{error && <div>{`There is a problem fetching the post data - ${error}`}</div>}
-						{quote && quote.data.map(fls => <CardFasilitas nama={fls.nama_fasilitas} gambar={fls.gambar_url} deskripsi={fls.isi} />)}
+						{quote && quote.data.map(fls => <CardFasilitas nama={fls.nama_fasilitas} gambar={fls.gambar_path} deskripsi={fls.isi} />)}
 					</div>
 					<div className="mt-5 mb-5">
 						<ReactPaginate
@@ -69,7 +69,7 @@ const CardFasilitas = props => {
 		<div className="card mb-3 border-0">
 			<div className="row g-0">
 				<div className="col-md-4">
-					<img src={props.gambar} className="img-fluid rounded-start" alt="gambar fasilitas" style={{maxWidth: "20rem"}} />
+					<img src={"https://ebfis.feb-unsiq.ac.id/storage/" + props.gambar} className="img-fluid rounded-start" alt="gambar fasilitas" style={{maxWidth: "20rem"}} />
 				</div>
 				<div className="col-md-8">
 					<div className="card-body">

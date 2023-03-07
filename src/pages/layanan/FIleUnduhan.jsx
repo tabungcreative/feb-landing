@@ -50,7 +50,7 @@ const FileUnduhan = () => {
 													<td>{index + 1}</td>
 													<td>{und.nama_file}</td>
 													<td>
-														<a href={und.file_url} className="download fw-semibold " target="_blank" rel="noopener noreferrer">
+														<a href={"https://ebfis.feb-unsiq.ac.id/storage/" + und.file_path} className="download fw-semibold " target="_blank" rel="noopener noreferrer">
 															download
 														</a>
 													</td>

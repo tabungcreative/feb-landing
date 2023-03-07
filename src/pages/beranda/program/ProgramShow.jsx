@@ -23,7 +23,7 @@ const ProgramShow = () => {
 								{error && <div>{`There is a problem fetching the post data - ${error}`}</div>}
 								<h3 className="text-black mt-5 mb-3">{quote.nama_program}</h3>
 								<div className="d-flex align-content-center justify-content-center mb-5">
-									<img src={quote.gambar_url} className="img-fluid my-3" alt="" style={{maxWidth: "50%"}} />
+									<img src={"https://ebfis.feb-unsiq.ac.id/storage/" + quote.gambar_url} className="img-fluid my-3" alt="" style={{maxWidth: "50%"}} />
 								</div>
 								<UnsafeComponent html={quote.isi} />
 							</>
